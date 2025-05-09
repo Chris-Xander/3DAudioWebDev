@@ -1,0 +1,11 @@
+.Services {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../Assets/startup-team-cheering-after-seeing-company-stocks-raising-doing-high-five.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 80px 5% 50px;
+    position: relative;
+}

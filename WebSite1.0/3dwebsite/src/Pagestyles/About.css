@@ -1,0 +1,293 @@
+.About{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+      url('../Assets/digital-mixer-recording-studio-work-with-sound-concept-creativity-show-business.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+
+.about-container {
+  min-height: 100vh;
+  padding: 80px 5% 50px;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
+}
+
+.gumball-mascot {
+  position: absolute;
+  right: 5%;
+  bottom: -50px;
+  width: 200px;
+  animation: float 3s ease-in-out infinite;
+  border-radius: 15px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hero-btn {
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-btn {
+  background: transparent;
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
+}
+
+.login-btn {
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  color: white;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.3);
+}
+
+/* Story Section */
+.story-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: rgba(117, 117, 129, 0.35);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.section-image img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.section-image img:hover {
+  transform: scale(1.05);
+}
+
+.section-text {
+  padding: 2rem;
+}
+
+.section-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+}
+
+.section-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Services Section */
+.services-section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: rgba(117, 117, 129, 0.35);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-item {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.service-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
+/* Features Section */
+.features-section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: rgba(117, 117, 129, 0.35);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(117, 117, 129, 0.35);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.cta-btn {
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.cta-btn.primary {
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  color: white;
+}
+
+.cta-btn.secondary {
+  background: transparent;
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
+}
+
+/* Floating Navigation */
+.floating-nav {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.float-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.float-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 255, 204, 0.2);
+}
+
+.float-icon {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .story-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .gumball-mascot {
+    width: 150px;
+    right: 0;
+  }
+  
+  .hero-buttons, .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .floating-nav {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+

@@ -1,0 +1,505 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Update the .App class styles */
+.App {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url('./Assets/close-up-sound-music-mixer-control-panel-blurred-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo h1 {
+  font-size: 2.2rem;
+  background: linear-gradient(45deg, #65acac, #4d6891);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: linear-gradient(45deg, rgb(24, 21, 21), black);
+  font-weight: bold;
+  font-style: oblique;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00ffcc;
+}
+
+.login-btn {
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Hero section styles */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #1f747c, #dadcde);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 30px;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: -100px;
+}
+
+.Mini-About {
+  position: relative;
+  text-align: center;
+  padding: 30px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.miniaboutimage {
+  padding: 100px;
+  position: relative;
+  background-image: url('./Assets/Gumbal\ 2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 40px;
+  border-radius: 25px 0 0 25px;
+  margin-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 45%;
+  height: 285px;
+  z-index: 1;
+}
+
+.miniaboutimage:hover {
+  transform: translateX(-20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.convenientinfo {
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.6;
+  color: #cccccc;
+  font-size: 1.25rem;
+  padding: 2rem;
+  margin-left: -50px;
+  margin-right: 5px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 0 15px 15px 0;
+  backdrop-filter: blur(5px);
+  width: 46%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 285px;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+.convenientinfo::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80%;
+  width: 3px;
+  background: linear-gradient(to bottom, 
+    transparent 0%,
+    #00ffcc 20%,
+    #0066ff 50%,
+    #00ffcc 80%,
+    transparent 100%
+  );
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+}
+
+.convenientinfo p {
+  transform: skewY(-5deg);
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  color: white;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #00ffcc;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    margin: 1rem 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Home Page Styles */
+.home-container {
+  min-height: 100vh;
+  min-width: 90%;
+}
+
+/* Services Overview Section */
+.services-overview {
+  padding: 4rem 5%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: rgba(117, 117, 129, 0.35);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.service-card h3 {
+  color: #00ffcc;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.service-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.service-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #00ffcc;
+}
+
+/* Add or update these styles */
+.service-link {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  color: white !important; /* Add !important to override Link default color */
+  text-decoration: none;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+/* Style for Equipment-Rental button specifically */
+.Equipment-Rental {
+  composes: service-link; 
+  
+}
+
+/* Hover effect */
+.service-link:hover,
+.Equipment-Rental:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: white !important;
+}
+
+
+.service-link:hover {
+  transform: translateY(-2px);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 4rem 5%;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h4 {
+  color: #00ffcc;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.feature p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* About Page Styles */
+.about-container {
+  min-height: 100vh;
+  padding: 80px 5% 50px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  color: #cccccc;
+}
+
+.about-section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: rgba(117, 117, 129, 0.35);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.about-section h2 {
+  color: #00ffcc;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.about-section p {
+  color: #cccccc;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.services-grid, .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-item, .feature-item {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover, .feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item h3, .feature-item h3 {
+  color: #00ffcc;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.service-item p, .feature-item p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .about-section {
+    padding: 1.5rem;
+  }
+  
+  .services-grid, .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
