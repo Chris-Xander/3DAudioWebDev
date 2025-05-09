@@ -1,8 +1,8 @@
 import React from 'react'
 import '../Pagestyles/About.css'
 import { Link } from 'react-router-dom'
-import gumballImage from '../Assets/Gumbal 2.jpg'
-import backgroundImage from '../Assets/james-kovin-F2h_WbKnX4o-unsplash.jpg'
+import Image from '../Assets/close-up-shot-professional-radio-equipment.jpg'
+import Image2 from '../Assets/IMG-20240805-WA0024(1).jpg'
 
 
 function About() {
@@ -19,13 +19,13 @@ function About() {
                         <Link to="/login" className='hero-btn login-btn'>Get Started</Link>
                     </div>
                 </div>
-                <img src={gumballImage} alt="Gumball Characters" className='gumball-mascot'/>
+                <img src={Image} alt="mixerimage" className='mixerpicture'/>
             </div>
 
             <div className='about-content'>
                 <div className='about-section story-section'>
                     <div className='section-image'>
-                        <img src={backgroundImage} alt="Studio Equipment" />
+                        <img src={Image2} alt="2men" />
                     </div>
                     <div className='section-text'>
                         <h2>Our Story</h2>
