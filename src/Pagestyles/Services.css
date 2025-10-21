@@ -1,0 +1,209 @@
+.services-container {
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  height: auto;
+  background-image: url('../Assets/startup-team-cheering-after-seeing-company-stocks-raising-doing-high-five.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 100px;
+}
+
+.services-header p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.services-card {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 30%;
+  max-height: 170px;
+}
+
+.services-card :hover{
+  transform: scale3d(1rem) ease;
+}
+
+.services-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.booking-form-section {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.submit-btn {
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Review Section Styles */
+.review-section {
+  margin: 2rem auto;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  padding: 2rem 1.5rem;
+  color: #fff;
+  display: none !important; /* !!this is currently hiding the review section due to a problem with firestore not saving reviews...a databaase must first be created but a payment plan hasnt been drawn yet. Hence this section is hidden for now. */
+
+}
+.review-section h2 {
+  margin-bottom: 1rem;
+  color: #00ffcc;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.review-form input,
+.review-form textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.review-form select {
+  background-color: #343434;
+  color: #FFD700;
+}
+
+.review-form input::placeholder,
+.review-form textarea::placeholder {
+  color: #b0e0e6;
+}
+.review-form textarea {
+  min-height: 60px;
+}
+.review-form button {
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.review-form button:hover {
+  background: #00bfae;
+}
+.reviews-list {
+  margin-top: 1rem;
+}
+.review-item {
+  background: rgba(0,0,0,0.5);
+  border-radius: 7px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  color: #fff;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.review-header strong {
+  color: #00ffcc;
+}
+.review-date {
+  color: #b0e0e6;
+  font-size: 0.9rem;
+}
+.review-rating {
+  margin-left: auto;
+  color: #FFD700;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  filter: drop-shadow(0 0 2px #FFD700);
+  background-color: #1d4441;
+}
+.review-comment {
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 0.1rem;
+}
+
+@media (max-width: 646px) {
+  .services-list {
+  display: grid;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  gap: 1rem;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.services-card {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+}
+}

@@ -1,0 +1,149 @@
+.contacts {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url('../Assets/digital-mixer-recording-studio-work-with-sound-concept-creativity-show-business.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+
+.contacts-container {
+  min-height: 100vh;
+  padding: 80px 5% 50px;
+  position: relative;
+}
+
+.contacts-hero {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.contacts-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.contacts-hero p {
+  font-size: 1.5rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
+}
+
+.contacts-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  background: rgba(117, 117, 129, 0.35);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+  max-width: 300px;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-text h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  color: #00ffcc;
+}
+
+.contact-text p {
+  font-size: 1.5rem;
+  color: #cccccc;
+}
+
+.contacts-image-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contacts-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.contacts-image:hover {
+  transform: scale(1.05);
+}
+
+.image-caption {
+  max-width: 300px;
+  text-align: center;
+  color: #cccccc;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+  .contacts-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .contacts-hero p {
+    font-size: 1.2rem;
+  }
+
+  .contacts-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    max-width: 100%;
+  }
+
+  .contacts-image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-image {
+    width: 100%;
+    max-width: 300px;
+  }
+}
