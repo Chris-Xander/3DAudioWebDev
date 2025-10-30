@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/3DAudioWebDev/static/css/main.f8e49697.css",
-    "main.js": "/3DAudioWebDev/static/js/main.016a6220.js",
+    "main.js": "/3DAudioWebDev/static/js/main.cc7059c6.js",
     "static/js/453.1c03a176.chunk.js": "/3DAudioWebDev/static/js/453.1c03a176.chunk.js",
     "static/media/startup-team-cheering-after-seeing-company-stocks-raising-doing-high-five.jpg": "/3DAudioWebDev/static/media/startup-team-cheering-after-seeing-company-stocks-raising-doing-high-five.e378516956308458cbf5.jpg",
     "static/media/fader-digital-mixing-console-with-volume-meter.jpg": "/3DAudioWebDev/static/media/fader-digital-mixing-console-with-volume-meter.03a0e63c4644d8be5fe5.jpg",
@@ -21,11 +21,11 @@
     "static/media/undraw_laravel-and-vue_fios (1).svg": "/3DAudioWebDev/static/media/undraw_laravel-and-vue_fios (1).b8c7bfe19904404b83214e8bb748b74d.svg",
     "index.html": "/3DAudioWebDev/index.html",
     "main.f8e49697.css.map": "/3DAudioWebDev/static/css/main.f8e49697.css.map",
-    "main.016a6220.js.map": "/3DAudioWebDev/static/js/main.016a6220.js.map",
+    "main.cc7059c6.js.map": "/3DAudioWebDev/static/js/main.cc7059c6.js.map",
     "453.1c03a176.chunk.js.map": "/3DAudioWebDev/static/js/453.1c03a176.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f8e49697.css",
-    "static/js/main.016a6220.js"
+    "static/js/main.cc7059c6.js"
   ]
 }
